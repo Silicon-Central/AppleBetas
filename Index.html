@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <!--Import Google Icon Font-->
+     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import Amamations-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <link rel="shortcut icon" type="image/png" href="/Users/sethu/Downloads/Apple\ Betas/Favicon.icns"/>
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <nav>
+         <div class="nav-wrapper #1e88e5 blue darken-1">
+          &#160&#160&#160&#160&#160&#160<a href="#" class="brand-logo" id="top" onclick="reload()">Apple Betas</a>
+           <ul id="nav-mobile" class="right hide-on-med-and-down">
+             <li><a href="#">iPhone/iPad</a></li>
+             <li><a href="#">Apple Watch</a></li>
+             <li><a href="#">Apple TV</a></li>
+             <li><a href="#">Mac</a></li>
+             <li><a href="#">Safari</a></li>
+             <li><a href="#">Xcode</a></li>
+           </ul>
+         </div>
+       </nav>
+   </head>
+   <body style="background-color: rgb(255, 255, 255)">
+     <div class="fixed-action-btn virtical">
+         <a class="btn-floating btn-large red animated bounceIn">
+           <i class="large material-icons animated bounceIn">menu</i>
+         </a>
+         <ul>
+           <li><a class="btn-floating black " onclick="dark()"><i class="material-icons">invert_colors</i></a></li>
+           <li><a class="btn-floating yellow darken-1" href="#top"><i class="material-icons">keyboard_arrow_up</i></a></li>
+           <li><a class="btn-floating green" onclick="reload()"><i class="material-icons">autorenew</i></a></li>
+           <li><a class="btn-floating blue pulse"><i class="material-icons">share</i></a></li>
+         </ul>
+       </div>
+       <center><h4> Apple Beta Central</h4></center>
+       <center><h5> The future, today</h5></center>
+       <blockquote>
+        Everything Apple Pro<br>
+        iTwe4kz<br>
+        iCrackUriDevice<br>
+
+       </blockquote>
+               <script> //javascript Embedded
+    function dark() {
+        if (document.body.style.backgroundColor == 'rgb(255, 255, 255)') {
+
+                document.body.style.backgroundColor = '#333';
+        }
+        else {
+                document.body.style.backgroundColor = 'rgb(255, 255, 255)';
+        }
+    } //reload page
+    function reload() {
+    location.reload();
+}
+//Read more
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Show more >";
+    var lesstext = "Show less";
+
+
+    $('.more').each(function() {
+        var content = $(this).html();
+
+        if(content.length > showChar) {
+
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+            $(this).html(html);
+        }
+
+    });
+
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+    </script>
+
+     <div class="container">
+   <div class="row valign-wrapper">
+     <div class="col s6 offset-s3 valign">
+       <div class="card blue-grey darken-1 animated bounceIn">
+         <div class="card-content white-text">
+           <span class="card-title"><i class="material-icons">tablet_mac</i> iPhone/iPad</span>
+           <details><p><summary>This OTA works for all compatible devices running IOS.</summary><br></p>
+            <li> iPhone 5s and above </li>
+            <li> Ipads newer than iPad Mini 2 and above </li>
+            <li> iPod Touch 6th-generation </li>
+             Summary: iOS 11 is compatible with all 64-bit devices.
+           </details>
+         </div>
+         <div class="card-action">
+           <a href="https://github.com/Silicon-Central/AppleBetaProfiler-/raw/master/iOS_11_beta_Profile.mobileconfig">iOS 11 (Dev beta)</a>
+           <a href="">iOS 10 (Public beta)</a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <div class="container">
+<div class="row valign-wrapper">
+ <div class="col s6 offset-s3 valign">
+   <div class="card blue-grey darken-1 animated bounceIn">
+     <div class="card-content white-text">
+       <span class="card-title"><i class="material-icons">watch</i> Apple Watch</span>
+       <p>This OTA works for all Apple Watch deices</p>
+     </div>
+     <div class="card-action">
+       <a href="https://github.com/Silicon-Central/AppleBetaProfiler-/raw/master/watchOS_4_beta_Profile.mobileconfig">Watch OS 4 (Dev beta)</a>
+     </div>
+   </div>
+ </div>
+</div>
+</div>
+<div class="container">
+<div class="row valign-wrapper">
+<div class="col s6 offset-s3 valign">
+  <div class="card blue-grey darken-1 animated bounceIn">
+    <div class="card-content white-text">
+      <span class="card-title"><i class="material-icons">tv</i> Apple TV</span>
+<p>This OTA works for all compatible Apple TV devices</p>
+    </div>
+    <div class="card-action">
+      <a href="https://github.com/Silicon-Central/AppleBetaProfiler-/raw/master/tvOS_11_beta_Profile.mobileconfig">TVos 11 (Dev beta)</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row valign-wrapper">
+<div class="col s6 offset-s3 valign">
+  <div class="card blue-grey darken-1 animated bounceIn">
+    <div class="card-content white-text">
+      <span class="card-title"><i class="material-icons">laptop_mac</i> Mac OS</span>
+       <details><p><summary>This OTA works for all compatible Mac devices <br> </summary>
+<li>MacBook Pro – 2010 or later models </li>
+<li>MacBook – Late 2009 or later models</li>
+<li>MacBook Air – 2010 or later models</li>
+<li>iMac – Late 2009 or later models</li>
+<li>Mac Mini – 2010 or later models</li>
+<li>Mac Pro – 2010 or later models.</li></p>
+    </div>
+    </details>
+    <div class="card-action">
+      <a href="https://drive.google.com/drive/folders/0BwNZHbImckHORk84RWdvOHk5Rm8?usp=sharing">Mac OS 10.13 high Sierra (dev beta)</a>
+      <a href="#">( N/A <b>YET</b>) </a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row valign-wrapper">
+<div class="col s6 offset-s3 valign">
+  <div class="card blue-grey darken-1 animated bounceIn">
+    <div class="card-content white-text">
+      <span class="card-title"><i class="material-icons">web</i> Safari</span>
+      <p>This app works for all devices running the latest versions* of Mac OS</p>
+    </div>
+    <div class="card-action">
+      <a href="http://secure-appldnld.apple.com/STP/091-07971-20170607-1AFFE2D2-4A2F-11E7-B717-DFA12D6174CC/SafariTechnologyPreview.dmg">Beta for Mac Os 10.13</a>
+      <a href="http://secure-appldnld.apple.com/STP/091-15727-20170607-1AFFE048-4A2F-11E7-B717-E0A12D6174CC/SafariTechnologyPreview.dmg">Beta for Mac Os 10.12</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row valign-wrapper">
+<div class="col s6 offset-s3 valign">
+  <div class="card blue-grey darken-1 animated bounceIn">
+    <div class="card-content white-text">
+      <span class="card-title"><i class="material-icons">code</i>Xcode</span>
+      <p>This app works for all devices running the latest versions of Mac OS</p>
+    </div>
+    <div class="card-action">
+      <a href="https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12">N/Ah</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+     <!--Import jQuery before materialize.js-->
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+   </body>
+
+        <footer class="page-footer #1e88e5 blue darken-1">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Sethu Senthil
+            <a class="grey-text text-lighten-4 right" onclick="dark()">Dark Mode</a>
+            </div>
+          </div>
+        </footer>
+ </html>
