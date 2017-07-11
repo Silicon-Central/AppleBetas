@@ -1,2 +1,2 @@
 # AppleBetas
-Get the latest Apple beta updats and IPSW's for your device!
+Get the latest Apple beta updates and IPSW's for your device!
