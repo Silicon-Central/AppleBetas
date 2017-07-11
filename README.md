@@ -1,2 +1,2 @@
 # AppleBetas
-Get apple betas of apps and Os with no cost and the lack of hassle developer payments. 
+Get the latest Apple beta updats and IPSW's for your device!
