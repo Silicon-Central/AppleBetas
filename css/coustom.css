@@ -4,3 +4,7 @@
 :focus {
   outline: 0;
 }
+/*Defines Tooltip Color */
+.backdrop{
+    background-color: #FFAB42;
+  }
