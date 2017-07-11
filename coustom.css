@@ -1,0 +1,6 @@
+/*!Coustom CSS  */
+
+/*Removes the ugly outline on elements */
+:focus {
+  outline: 0;
+}
