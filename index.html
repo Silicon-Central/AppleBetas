@@ -2,11 +2,14 @@
  <html>
    <head>
      <!--Import Google Icon Font-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">      <!--Import Amamations-->
+     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import Amamations-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
      <!--Import materialize.css-->
      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-     <link rel="shortcut icon" type="image/png" href="/Users/sethu/Downloads/Apple\ Betas/Favicon.icns"/>
+     <link type="text/css" rel="stylesheet" href="css/coustom.css"  media="screen,projection"/>
+     <!--Favicon For Website-->
+     <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
      <!--Let browser know website is optimized for mobile-->
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
      <nav>
@@ -35,8 +38,8 @@
            <li><a class="btn-floating blue pulse"><i class="material-icons">share</i></a></li>
          </ul>
        </div>
-       <center><h4> Apple Beta Central</h4></center>
-       <center><h5> The future, today</h5></center>
+       <center><h4> Apple Beta Central </h4></center>
+       <center><h5> The future, today </h5></center>
        <blockquote>
         Everything Apple Pro<br>
         iTwe4kz<br>
@@ -93,6 +96,11 @@ $(document).ready(function() {
         return false;
     });
 });
+//parallax-container
+$(document).ready(function(){
+  $('.parallax').parallax();
+});
+
     </script>
 
      <div class="container">
@@ -110,7 +118,7 @@ $(document).ready(function() {
          </div>
          <div class="card-action">
            <a href="https://github.com/Silicon-Central/AppleBetaProfiler-/raw/master/iOS_11_beta_Profile.mobileconfig">iOS 11 (Dev beta)</a>
-           <a href="https://github.com/Silicon-Central/AppleBetaProfiler/raw/master/Public_Beta.mobileconfig">iOS 10 (Public beta)</a>
+           <a href="">iOS 10 (Public beta)</a>
          </div>
        </div>
      </div>
@@ -122,8 +130,7 @@ $(document).ready(function() {
    <div class="card blue-grey darken-1 animated bounceIn">
      <div class="card-content white-text">
        <span class="card-title"><i class="material-icons">watch</i> Apple Watch</span>
-       <p>This OTA works for all Apple Watch deices</p>
-     </div>
+<details><p><summary>This OTA works for all Apple Watch devices <br> </summary> </div>
      <div class="card-action">
        <a href="https://github.com/Silicon-Central/AppleBetaProfiler-/raw/master/watchOS_4_beta_Profile.mobileconfig">Watch OS 4 (Dev beta)</a>
      </div>
@@ -194,8 +201,7 @@ $(document).ready(function() {
       <p>This app works for all devices running the latest versions of Mac OS</p>
     </div>
     <div class="card-action">
-      <a href="https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_9_beta_2/Xcode_9_beta_2.xip">Xcode Dev Beta</a>
-      <a href="https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12">Xcode Pub Beta</a>
+      <a href="https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12">N/Ah</a>
     </div>
   </div>
 </div>
@@ -210,23 +216,20 @@ $(document).ready(function() {
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <h5 class="white-text">Apple Beta Central</h5>
+                <p class="grey-text text-lighten-4">The Future,Today</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <h5 class="white-text">Copyright Info</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  <li><a class="grey-text text-lighten-3">iOS and the Apple Logo are a trademark of Apple.inc, These downloads are only for people who have already purchased the certain product.</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2017 Silicon Central
+            MIT Licence
             <a class="grey-text text-lighten-4 right" onclick="dark()">Dark Mode</a>
             </div>
           </div>
